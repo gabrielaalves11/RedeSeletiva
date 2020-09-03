@@ -1,0 +1,46 @@
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+    /*color: ;*/
+}
+.left-inner-addon input.form-control {
+    padding-left: 30px;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #666;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
+
+/*.bg-register-image {
+     The image used
+  background-color: green;
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}*/
+
+.bg-register-image{
+    background-color: green;
+    background-position:center;
+    background-size:cover;
+}
+
+#logo {
+    width: 100%;
+}

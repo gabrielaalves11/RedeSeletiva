@@ -1,0 +1,51 @@
+// Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+(function () {
+    'use strict';
+    window.addEventListener('load', function () {
+        // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+        var forms = document.getElementsByClassName('needs-validation');
+        // Faz um loop neles e evita o envio
+        var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+function validarEmail(field) {
+    usuario = field.value.substring(0, field.value.indexOf("@"));
+    dominio = field.value.substring(field.value.indexOf("@") + 1, field.value.length);
+
+    if ((usuario.length >= 1) &&
+        (dominio.length >= 3) &&
+        (usuario.search("@") == -1) &&
+        (dominio.search("@") == -1) &&
+        (usuario.search(" ") == -1) &&
+        (dominio.search(" ") == -1) &&
+        (dominio.search(".") != -1) &&
+        (dominio.indexOf(".") >= 1) &&
+        (dominio.lastIndexOf(".") < dominio.length - 1)) {
+    }
+    else {
+        alert("E-mail inválido!");
+    }
+}
+
+var password = document.getElementById("senha")
+    , confirm_password = document.getElementById("confirmarSenha");
+
+function validarSenha() {
+    if (senha.value != confirmarSenha.value) {
+        confirmarSenha.setCustomValidity("Senhas diferentes!");
+    } else {
+        confirmarSenha.setCustomValidity('');
+    }
+}
+
+senha.onchange = validarSenha;
+confirmarSenha.onkeyup = validarSenha;
