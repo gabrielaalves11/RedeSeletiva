@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/LogoVerde.png">
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/879229ed8e.js" crossorigin="anonymous"></script>
@@ -29,7 +30,7 @@
                   <h1 class="h4 text-gray-900 mb-4">Cria sua conta aqui!</h1>
                 </div><hr>
 
-                <form name="form" class="needs-validation" novalidate>
+                <form name="form" method="POST" class="needs-validation" novalidate>
                   <div><!-- Dados para Acesso -->
                     <label for=""><i class="fas fa-user"></i> Dados para Acesso</label><br>
 
@@ -45,7 +46,7 @@
                     <div class="form-row"><!-- Criar e Confirmar senha -->
                       <div class="col left-inner-addon"><!-- Criar senha -->
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="senha" class="form-control" pattern="[0-9a-fA-F]{8}"
+                        <input type="password" id="senha" name="senha" class="form-control" pattern="[0-9a-fA-F]{8}"
                         placeholder="Crie uma senha" required>
                           <div class="invalid-feedback" >
                           Crie uma senha com até 8 dígitos entre números e letras.
@@ -54,8 +55,8 @@
 
                       <div class="col left-inner-addon"><!-- Confirmar senha -->
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="confirmarSenha" class="form-control" pattern="[0-9a-fA-F]{8}"
-                        placeholder="Confirme sua senha" required>
+                        <input type="password" id="confirmarSenha" name="confirmarSenha" class="form-control" 
+                        pattern="[0-9a-fA-F]{8}" placeholder="Confirme sua senha" required>
                           <div class="invalid-feedback">
                             Senhas diferentes.
                           </div>

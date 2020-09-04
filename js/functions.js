@@ -49,3 +49,4 @@ function validarSenha() {
 
 senha.onchange = validarSenha;
 confirmarSenha.onkeyup = validarSenha;
+
