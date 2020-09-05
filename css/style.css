@@ -22,19 +22,6 @@ input[type="date"]:valid:before {
     content: "";
 }
 
-/*.bg-register-image {
-     The image used
-  background-color: green;
-
-  min-height: 380px;
-
-  /* Center and scale the image nicely 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}*/
-
 .bg-register-image{
     background-color: green;
     background-position:center;
@@ -43,4 +30,12 @@ input[type="date"]:valid:before {
 
 #logo {
     width: 100%;
+}
+
+.img-arredondada {
+    border-radius: 50%;
+    background-position: -15px -15px;
+    height: 195px;
+    width: 195px;
+    background-image: url(img/Avatar.png);
 }
