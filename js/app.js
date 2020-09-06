@@ -1,6 +1,6 @@
 function validar(){
-    let email = document.getElementById('email-entrada')
-    let senha = document.getElementById('senha-de-entrada')
+    let email = document.getElementById('email')
+    let senha = document.getElementById('senha')
     let link = document.getElementById('linkDesabilitado')
 
     if(email.value.length == 0 || senha.value.length == 0){
