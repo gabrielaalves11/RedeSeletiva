@@ -8,7 +8,7 @@
 
     <link rel="icon" href="img/LogoVerde.png">
 
-    <title>Rede Seletiva - Entrar</title>
+    <title>Rede Seletiva - Esqueci a Senha</title>
 
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="css/style.css">
@@ -32,7 +32,10 @@
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Seja bem vindo!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Esqueceu sua senha?</h1>
+                                <p class="text-black-50 mb-4">Nós entendemos, coisas acontecem. 
+                                    Basta inserir seu endereço de e-mail abaixo 
+                                    e enviaremos um link para redefinir sua senha!</p>
                             </div>
                             <hr>
 
@@ -40,7 +43,7 @@
                                 <div>
                                     <!-- Login -->
 
-                                    <div class="form-group left-inner-addon">
+                                    <div class="form-group left-inner-addon mb-4 mt-4">
                                         <!-- E-mail -->
                                         <i class="fas fa-envelope"></i>
                                         <input type="email" id="email" name="email" onblur="validarEmail(form.email)"
@@ -49,30 +52,21 @@
                                             E-mail incorreto.
                                         </div>
                                     </div>
-                                    <div class="form-group left-inner-addon">
-                                        <!-- Senha -->
-                                        <i class="fas fa-lock"></i>
-                                        <input type="password" id="senha" name="senha" class="form-control"
-                                            pattern="[0-9a-fA-F]{8}" placeholder="Crie uma senha" required>
-                                        <div class="invalid-feedback">
-                                            Senha incorreta.
-                                        </div>
-                                    </div>
 
-                                    <div class=" checkbox mb-3">
-
-                                        <label>
-                                            <input type="checkbox" value="remember-me"> Lembrar senha
-                                        </label>
-                                        <br>
-                                        <a class="mr-3" href="recuperar_senha.html">Esqueceu a senha?</a>
-                                        <a href="CadUser.html">Cadastrar</a>
-                                    </div>
-
-                                    <a id="linkDesabilitado" href="pgInicial.html"
+                                    <a id="linkDesabilitado" href="pag_inicial.html"
                                         class="btn btn-primary btn-user btn-block" onclick="validar()">
-                                        Entrar
+                                        Redefinir senha
                                     </a>
+
+                                    <hr>
+                                    <div class="text-center">
+                                        <a  href="CadUser.html">Crie a sua conta aqui!</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="index.html">já tem uma conta? Conecte-se!</a>
+                                    </div>
+
+                                    <!-- <button class="btn btn-lg btn-success btn-block" type="submit" onclick="valido()">Entar</button> -->
 
                                     <footer>
                                         <p class="mt-5 mb-3 text-muted text-center">RedeSeletiva &copy; 2020</p>
