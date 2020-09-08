@@ -50,7 +50,25 @@ function validarSenha() {
 senha.onchange = validarSenha;
 confirmarSenha.onkeyup = validarSenha;
 
+<<<<<<< HEAD
 !function (t) {
+=======
+function validar(){
+    let email = document.getElementById('email')
+    let senha = document.getElementById('senha')
+    let link = document.getElementById('linkDesabilitado')
+
+    if(email.value.length == 0 && senha.value.length == 0){
+        window.alert('[ERRO] Os campos tem que estar preenchidos.')
+        link.href = ''
+    }else{
+        link.href = "pag_inicial.html"
+    }
+
+}
+
+/*!function (t) {
+>>>>>>> d0a2579d52690e47171693076858aa8262d9d31d
     "use strict";
     t("#sidebarToggle, #sidebarToggleTop").on("click",
 
@@ -70,6 +88,7 @@ confirmarSenha.onkeyup = validarSenha;
                 }
             }), t(document).on("scroll", function () { 100 < t(this).scrollTop() ? t(".scroll-to-top").fadeIn() : t(".scroll-to-top").fadeOut() }), t(document).on("click", "a.scroll-to-top", function (o) { var e = t(this); t("html, body").stop().animate({ scrollTop: t(e.attr("href")).offset().top }, 1e3, "easeInOutExpo"), o.preventDefault() })
 }(jQuery);
+<<<<<<< HEAD
 
 function validar(){
     let email = document.getElementById('email-entrada')
@@ -84,3 +103,5 @@ function validar(){
     }
 
 }
+=======
+>>>>>>> d0a2579d52690e47171693076858aa8262d9d31d
