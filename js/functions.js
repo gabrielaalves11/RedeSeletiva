@@ -83,8 +83,4 @@ function validar(){
                     this.scrollTop += 30 * (l < 0 ? 1 : -1), o.preventDefault()
                 }
             }), t(document).on("scroll", function () { 100 < t(this).scrollTop() ? t(".scroll-to-top").fadeIn() : t(".scroll-to-top").fadeOut() }), t(document).on("click", "a.scroll-to-top", function (o) { var e = t(this); t("html, body").stop().animate({ scrollTop: t(e.attr("href")).offset().top }, 1e3, "easeInOutExpo"), o.preventDefault() })
-<<<<<<< HEAD
-}(jQuery);*/
-=======
 }(jQuery);
->>>>>>> 125d669c460bbc94a3f942fb3604ea54be634697
