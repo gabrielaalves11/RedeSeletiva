@@ -50,7 +50,6 @@ function validarSenha() {
 senha.onchange = validarSenha;
 confirmarSenha.onkeyup = validarSenha;
 
-<<<<<<< HEAD
 function validar(){
     let email = document.getElementById('email')
     let senha = document.getElementById('senha')
@@ -66,9 +65,6 @@ function validar(){
 }
 
 /*!function (t) {
-=======
-!function (t) {
->>>>>>> 125d669c460bbc94a3f942fb3604ea54be634697
     "use strict";
     t("#sidebarToggle, #sidebarToggleTop").on("click",
 
