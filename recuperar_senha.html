@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="img/LogoVerde.png">
+
+    <title>Rede Seletiva - Esqueci a Senha</title>
+
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/879229ed8e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block" id="register-image">
+                        <div class="text-center">
+                            <img src="img/Logo3.png" class="rounded" alt="" id="logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Esqueceu sua senha?</h1>
+                                <p class="text-black-50 mb-4">Nós entendemos, coisas acontecem. 
+                                    Basta inserir seu endereço de e-mail abaixo 
+                                    e enviaremos um link para redefinir sua senha!</p>
+                            </div>
+                            <hr>
+
+                            <form name="form" method="POST" class="needs-validation" novalidate>
+                                <div>
+                                    <!-- Login -->
+
+                                    <div class="form-group left-inner-addon mb-4 mt-4">
+                                        <!-- E-mail -->
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="email" name="email" onblur="validarEmail(form.email)"
+                                            class="form-control" placeholder="Digite seu e-mail" required>
+                                        <div class="invalid-feedback">
+                                            E-mail incorreto.
+                                        </div>
+                                    </div>
+
+                                    <a id="linkDesabilitado" href="pag_inicial.html"
+                                        class="btn btn-primary btn-user btn-block" onclick="validar()">
+                                        Redefinir senha
+                                    </a>
+
+                                    <hr>
+                                    <div class="text-center">
+                                        <a  href="CadUser.html">Crie a sua conta aqui!</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="index.html">já tem uma conta? Conecte-se!</a>
+                                    </div>
+
+                                    <!-- <button class="btn btn-lg btn-success btn-block" type="submit" onclick="valido()">Entar</button> -->
+
+                                    <footer>
+                                        <p class="mt-5 mb-3 text-muted text-center">RedeSeletiva &copy; 2020</p>
+                                    </footer>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="form-validation.js"></script>
+</body>
+</body>
+
+</html>
