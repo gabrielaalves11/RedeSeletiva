@@ -50,9 +50,6 @@ function validarSenha() {
 senha.onchange = validarSenha;
 confirmarSenha.onkeyup = validarSenha;
 
-<<<<<<< HEAD
-!function (t) {
-=======
 function validar(){
     let email = document.getElementById('email')
     let senha = document.getElementById('senha')
@@ -68,7 +65,6 @@ function validar(){
 }
 
 /*!function (t) {
->>>>>>> d0a2579d52690e47171693076858aa8262d9d31d
     "use strict";
     t("#sidebarToggle, #sidebarToggleTop").on("click",
 
@@ -88,7 +84,6 @@ function validar(){
                 }
             }), t(document).on("scroll", function () { 100 < t(this).scrollTop() ? t(".scroll-to-top").fadeIn() : t(".scroll-to-top").fadeOut() }), t(document).on("click", "a.scroll-to-top", function (o) { var e = t(this); t("html, body").stop().animate({ scrollTop: t(e.attr("href")).offset().top }, 1e3, "easeInOutExpo"), o.preventDefault() })
 }(jQuery);
-<<<<<<< HEAD
 
 function validar(){
     let email = document.getElementById('email-entrada')
@@ -103,5 +98,3 @@ function validar(){
     }
 
 }
-=======
->>>>>>> d0a2579d52690e47171693076858aa8262d9d31d
